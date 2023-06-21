@@ -1,0 +1,11 @@
+def inches_to_feet_and_inches(inches):
+    feet = inches // 12  # Whole number of feet
+    remaining_inches = inches % 12  # Remaining inches
+
+    return feet, remaining_inches
+
+# Test the inches_to_feet_and_inches function
+inches = int(input("Enter the amount of inches: "))
+
+feet, remaining_inches = inches_to_feet_and_inches(inches)
+print(f"{inches} inches is equal to {feet} feet and {remaining_inches} inches.")
